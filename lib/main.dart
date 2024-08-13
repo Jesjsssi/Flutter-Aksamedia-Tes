@@ -61,24 +61,23 @@ class _BeautySetPageState extends State<BeautySetPage> {
                   children: [
                     IconButton(
                       icon: SvgPicture.asset(
-                        'assets/import.svg', // Path ke ikon SVG Anda
-                        color: Colors.white, // Warna ikon
-                        height: 24, // Sesuaikan tinggi ikon
-                        width: 24, // Sesuaikan lebar ikon
+                        'assets/import.svg', 
+                        color: Colors.white, 
+                        height: 24, 
+                        width: 24, 
                       ),
                       onPressed: () {
-                        // Tambahkan fungsi yang sesuai
                       },
                     ),
                     IconButton(
                       icon: SvgPicture.asset(
-                        'assets/cart.svg', // Path ke ikon SVG Anda
-                        color: Colors.white, // Warna ikon
-                        height: 24, // Sesuaikan tinggi ikon
-                        width: 24, // Sesuaikan lebar ikon
+                        'assets/cart.svg', 
+                        color: Colors.white, 
+                        height: 24, 
+                        width: 24, 
                       ),
                       onPressed: () {
-                        // Tambahkan fungsi yang sesuai
+                       
                       },
                     ),
                   ],
@@ -122,7 +121,7 @@ class _BeautySetPageState extends State<BeautySetPage> {
             ),
             
           ),
-          // Card dengan radius 20 pada bagian atas, menutupi seluruh layar di bawah gambar
+          
           NotificationListener<DraggableScrollableNotification>(
             onNotification: (notification) {
               if (notification.extent > 0.75 && _isAppBarVisible) {
@@ -231,14 +230,14 @@ class _BeautySetPageState extends State<BeautySetPage> {
                                               ListTile(
                                                 title: Text('Teks dan Link'),
                                                 onTap: () {
-                                                  // Implementasi untuk membagikan teks dan link
+                                                  
                                                 },
                                               ),
                                               Divider(),
                                               ListTile(
                                                 title: Text('Gambar'),
                                                 onTap: () {
-                                                  // Implementasi untuk membagikan gambar
+                                                 
                                                 },
                                               ),
                                               SizedBox(height: 150),
@@ -249,11 +248,11 @@ class _BeautySetPageState extends State<BeautySetPage> {
                                     );
                                   },
                                   child: SvgPicture.asset(
-                                    'assets/share.svg', // Path to your SVG file
+                                    'assets/share.svg', 
                                     height: 24,
                                     width: 24,
                                     color: Colors
-                                        .black, // Adjust the color if necessary
+                                        .black,
                                   ),
                                 ),
                               ],
@@ -333,26 +332,25 @@ class _BeautySetPageState extends State<BeautySetPage> {
                             SizedBox(height: 16),
                             Container(
                               width: MediaQuery.of(context).size.width -
-                                  32, // Mengurangi total lebar dengan margin kiri dan kanan
+                                  32, 
                               padding: EdgeInsets.symmetric(
                                   vertical: 8, horizontal: 16),
                               decoration: BoxDecoration(
                                 color: Color(0xFFECE806),
                                 borderRadius: BorderRadius.only(
                                   bottomLeft: Radius.circular(
-                                      10), // Radius pada sudut bawah kiri
+                                      10), 
                                   bottomRight: Radius.circular(
-                                      10), // Radius pada sudut bawah kanan
+                                      10), 
                                 ),
                               ),
                               child: Center(
-                                // Menggunakan widget Center untuk memusatkan teks
                                 child: RichText(
                                   textAlign: TextAlign
-                                      .center, // Menetapkan teks agar berada di tengah
+                                      .center, 
                                   text: TextSpan(
                                     style: TextStyle(
-                                      color: Colors.black, // Default text color
+                                      color: Colors.black, 
                                     ),
                                     children: <TextSpan>[
                                       TextSpan(text: "Komisi "),
@@ -371,22 +369,22 @@ class _BeautySetPageState extends State<BeautySetPage> {
                             ),
                             Container(
                               width: double
-                                  .infinity, // Lebar sesuai dengan lebar konten lainnya
+                                  .infinity,
                               child: Card(
-                                color: Colors.white, // Warna card menjadi putih
+                                color: Colors.white, 
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
                                     color: Color(
-                                        0xFFE2E8F0), // Warna border #E2E8F0
+                                        0xFFE2E8F0), /
                                     width: 1,
                                   ),
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 margin: EdgeInsets.only(top: 14, bottom: 14),
-                                elevation: 0, // Hilangkan shadow
+                                elevation: 0, 
                                 child: Padding(
                                   padding: EdgeInsets.all(
-                                      20), // Membuat padding lebih besar
+                                      20), 
                                   child: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
@@ -403,55 +401,55 @@ class _BeautySetPageState extends State<BeautySetPage> {
                                       Row(
                                         children: [
                                           SizedBox(
-                                            width: 97, // Lebar 97px
-                                            height: 35, // Tinggi 27px
+                                            width: 97, 
+                                            height: 35, 
                                             child: RawChip(
                                               label: Text(
                                                 'Paket 1',
                                                 style: TextStyle(
                                                   color: Colors
-                                                      .black, // Teks hitam saat dipilih
+                                                      .black,
                                                 ),
                                               ),
                                               selected: true,
                                               selectedColor: Color(
-                                                  0xFFE6E7E7), // Warna latar belakang saat dipilih
+                                                  0xFFE6E7E7), 
                                               backgroundColor: Color(
-                                                  0xFFE6E7E7), // Warna latar belakang saat tidak dipilih
+                                                  0xFFE6E7E7), 
                                               side: BorderSide(
                                                 color: Colors
-                                                    .black, // Warna border saat dipilih
+                                                    .black, 
                                                 width: 2,
                                               ),
                                               showCheckmark:
-                                                  false, // Hilangkan centang
+                                                  false, 
                                               onSelected: (bool selected) {},
                                             ),
                                           ),
                                           SizedBox(width: 8),
                                           SizedBox(
-                                            width: 97, // Lebar 97px
-                                            height: 35, // Tinggi 27px
+                                            width: 97, 
+                                            height: 35,
                                             child: RawChip(
                                               label: Text(
                                                 'Paket 2',
                                                 style: TextStyle(
                                                   color: Color(
-                                                      0xFF4A4E5A), // Teks hitam saat tidak dipilih
+                                                      0xFF4A4E5A), 
                                                 ),
                                               ),
                                               selected: false,
                                               selectedColor: Color(
-                                                  0xFFE6E7E7), // Warna latar belakang saat tidak dipilih
+                                                  0xFFE6E7E7), 
                                               backgroundColor: Color(
-                                                  0xFFE6E7E7), // Warna latar belakang saat dipilih
+                                                  0xFFE6E7E7), 
                                               side: BorderSide(
                                                 color: Color(
-                                                    0xFFE6E7E7), // Warna border saat tidak dipilih
+                                                    0xFFE6E7E7), 
                                                 width: 2,
                                               ),
                                               showCheckmark:
-                                                  false, // Hilangkan centang
+                                                  false, 
                                               onSelected: (bool selected) {},
                                             ),
                                           ),
@@ -475,13 +473,13 @@ class _BeautySetPageState extends State<BeautySetPage> {
                                               shape: BoxShape.circle,
                                               border: Border.all(
                                                 color: Colors
-                                                    .black, // Warna border, bisa diganti sesuai kebutuhan
-                                                width: 2, // Ketebalan border
+                                                    .black, 
+                                                width: 2, 
                                               ),
                                             ),
                                             child: CircleAvatar(
                                               radius:
-                                                  20, // Sesuaikan radius agar lingkaran berada di dalam container 44x44
+                                                  20, 
                                               backgroundColor:
                                                   Color(0xFFDDB69A),
                                             ),
@@ -494,13 +492,13 @@ class _BeautySetPageState extends State<BeautySetPage> {
                                               shape: BoxShape.circle,
                                               border: Border.all(
                                                 color: Colors
-                                                    .black, // Warna border
-                                                width: 2, // Ketebalan border
+                                                    .black, 
+                                                width: 2,
                                               ),
                                             ),
                                             child: CircleAvatar(
                                               radius:
-                                                  20, // Sesuaikan radius agar lingkaran berada di dalam container 44x44
+                                                  20, 
                                               backgroundColor: Colors.brown,
                                             ),
                                           ),
@@ -534,9 +532,9 @@ class _BeautySetPageState extends State<BeautySetPage> {
                             SizedBox(height: 8),
                             Row(
                               mainAxisAlignment: MainAxisAlignment
-                                  .spaceBetween, // Memastikan ruang antara teks dan ikon
+                                  .spaceBetween, 
                               crossAxisAlignment: CrossAxisAlignment
-                                  .center, // Menjaga teks dan ikon sejajar secara vertikal
+                                  .center,
                               children: [
                                 Text(
                                   "Deskripsi",
@@ -546,10 +544,10 @@ class _BeautySetPageState extends State<BeautySetPage> {
                                   ),
                                 ),
                                 SvgPicture.asset(
-                                  'assets/copy.svg', // Path ke file SVG
+                                  'assets/copy.svg', 
                                   height: 24,
                                   width: 24,
-                                  color: Colors.blue, // Warna ikon
+                                  color: Colors.blue, 
                                 ),
                               ],
                             ),
@@ -564,22 +562,22 @@ class _BeautySetPageState extends State<BeautySetPage> {
                                 onPressed: () {},
                                 child: Row(
                                   mainAxisSize: MainAxisSize
-                                      .min, // Mengatur ukuran Row agar sesuai dengan konten
+                                      .min, 
                                   children: [
                                     Text(
                                       "Selengkapnya",
                                       style: TextStyle(
                                           color: Colors
-                                              .blue), // Mengubah warna tulisan menjadi biru
+                                              .blue), 
                                     ),
                                     SizedBox(
                                         width:
-                                            4), // Memberikan jarak antara teks dan ikon
+                                            4), 
                                     Icon(
                                       Icons
-                                          .keyboard_arrow_down, // Menggunakan ikon bawaan yang serupa
+                                          .keyboard_arrow_down, 
                                       color: Colors
-                                          .blue, // Mengubah warna ikon menjadi biru
+                                          .blue, 
                                     ),
                                   ],
                                 ),
@@ -643,12 +641,12 @@ class _BeautySetPageState extends State<BeautySetPage> {
                             ),
                             Container(
                               margin: EdgeInsets.only(
-                                  top: 20), // Menambahkan margin atas 20
+                                  top: 20), 
                               child: Row(
                                 children: [
                                   Expanded(
                                     flex:
-                                        2, // Membuat tombol "Tambahkan ke toko" lebih lebar
+                                        2, 
                                     child: OutlinedButton(
                                       onPressed: () {},
                                       style: OutlinedButton.styleFrom(
@@ -659,7 +657,7 @@ class _BeautySetPageState extends State<BeautySetPage> {
                                         ),
                                         padding: EdgeInsets.symmetric(
                                             vertical: 16,
-                                            horizontal: 24), // Adjust padding
+                                            horizontal: 24), 
                                       ),
                                       child: Text("Tambahkan ke toko",
                                           style:
@@ -667,29 +665,29 @@ class _BeautySetPageState extends State<BeautySetPage> {
                                     ),
                                   ),
                                   SizedBox(
-                                      width: 8), // Spacing between the buttons
+                                      width: 8),
                                   Expanded(
                                     flex:
-                                        1, // Membuat tombol ElevatedButton lebar menyesuaikan layar
+                                        1, 
                                     child: ElevatedButton(
                                       onPressed: () {},
                                       style: ElevatedButton.styleFrom(
                                         backgroundColor: Colors.black,
                                         shape: RoundedRectangleBorder(
                                           borderRadius: BorderRadius.circular(
-                                              8), // Rounded corners
+                                              8),
                                         ),
                                         padding: EdgeInsets.symmetric(
                                             vertical: 16,
                                             horizontal:
-                                                24), // Adjust padding to ensure button is wide
+                                                24),
                                       ),
                                       child: SvgPicture.asset(
-                                        'assets/cart.svg', // Path ke file SVG
+                                        'assets/cart.svg', 
                                         color: Colors
-                                            .white, // Warna ikon jika ingin menyesuaikan warna
-                                        height: 24, // Sesuaikan tinggi ikon
-                                        width: 24, // Sesuaikan lebar ikon
+                                            .white, 
+                                        height: 24, 
+                                        width: 24, 
                                       ),
                                     ),
                                   ),
@@ -727,14 +725,14 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.white, // Changed card color to white
+      color: Colors.white, 
       elevation: 2,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),
       child: Column(
         mainAxisSize:
-            MainAxisSize.min, // Menyesuaikan ukuran card dengan konten
+            MainAxisSize.min, 
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Stack(
